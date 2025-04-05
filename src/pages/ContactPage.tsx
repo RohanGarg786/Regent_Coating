@@ -16,21 +16,19 @@ export const Contact = () => (
             <div>
               <h4 className="text-lg font-semibold mb-2">Head Office</h4>
               <p className="text-gray-600">
-                123 Wood Street
+                REGENT COATINGS,
                 <br />
-                Mumbai, Maharashtra 400001
-                <br />
-                India
+                Piazza Signorelli,
+                <br />1 27020 Parona (PV) Italia
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-2">Factory</h4>
               <p className="text-gray-600">
-                456 Industrial Area
+                REGENT COATINGS,
                 <br />
-                Pune, Maharashtra 411001
-                <br />
-                India
+                Piazza Signorelli,
+                <br />1 27020 Parona (PV) Italia
               </p>
             </div>
           </div>
@@ -38,10 +36,10 @@ export const Contact = () => (
             <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
             <div className="space-y-4">
               <p className="text-gray-600">
-                <strong>Phone:</strong> +91 123 456 7890
+                <strong>Phone:</strong> +39 0384-25301
               </p>
               <p className="text-gray-600">
-                <strong>Email:</strong> info@regentcoatings.com
+                <strong>Email:</strong> regentcoatings@gmail.com
               </p>
               <p className="text-gray-600">
                 <strong>Business Hours:</strong>

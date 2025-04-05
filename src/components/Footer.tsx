@@ -12,7 +12,7 @@ export const Footer = () => (
               Regent Coatings
             </span>
           </div>
-          <p className="text-sm">Premium wood finishes for every surface</p>
+          <p className="text-sm">Luxury Italian Finish to your Home</p>
         </div>
         <div>
           <h3 className="text-lg font-semibold mb-4">Products</h3>
@@ -22,7 +22,7 @@ export const Footer = () => (
                 to="/products"
                 className="hover:text-white transition-colors"
               >
-                Wood Polish
+                Polyurethane Finish
               </Link>
             </li>
             <li>
@@ -30,7 +30,7 @@ export const Footer = () => (
                 to="/products"
                 className="hover:text-white transition-colors"
               >
-                Wood Sealers
+                Pigmented Finish
               </Link>
             </li>
             <li>
@@ -38,7 +38,7 @@ export const Footer = () => (
                 to="/products"
                 className="hover:text-white transition-colors"
               >
-                Varnishes
+                Special Effects
               </Link>
             </li>
             <li>
@@ -46,7 +46,7 @@ export const Footer = () => (
                 to="/products"
                 className="hover:text-white transition-colors"
               >
-                Stains
+                Chrome Finish
               </Link>
             </li>
           </ul>

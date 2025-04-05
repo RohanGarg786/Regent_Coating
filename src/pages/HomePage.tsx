@@ -1,6 +1,8 @@
 import { ArrowRight, ChevronDown, Droplets, Leaf, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import Drum from "../assets/Drum.jpg";
+import Regent_Background from "../assets/Regent_background.png";
+import Regent_image from "../assets/Regent_image.png";
 
 export const HomePage = () => {
   return (
@@ -9,7 +11,7 @@ export const HomePage = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=2000"
+            src={Regent_Background}
             alt="Wood finishing"
             className="w-full h-full object-cover"
           />
@@ -18,7 +20,7 @@ export const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-in">
-              Premium Wood Finishes for Lasting Beauty
+              Luxury Italian Wood Finish to your Home
             </h1>
             <p className="text-xl mb-8 animate-fade-in">
               Transform your wooden surfaces with our professional-grade
@@ -27,7 +29,8 @@ export const HomePage = () => {
             <div className="flex space-x-4">
               <Link
                 to="/products"
-                className="bg-emerald-600 text-white px-8 py-3 rounded-full button-hover flex items-center animate-fade-in"
+                className="text-white px-8 py-3 rounded-full button-hover flex items-center animate-fade-in"
+                style={{ backgroundColor: "#8B4513" }}
               >
                 Explore Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -58,8 +61,11 @@ export const HomePage = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center p-6 animate-fade-in">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Droplets className="h-8 w-8 text-emerald-600" />
+              <div
+                className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
+                style={{ backgroundColor: "#8B4513" }}
+              >
+                <Droplets className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Deep Penetration</h3>
               <p className="text-gray-600">
@@ -67,8 +73,11 @@ export const HomePage = () => {
               </p>
             </div>
             <div className="text-center p-6 animate-fade-in">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Shield className="h-8 w-8 text-emerald-600" />
+              <div
+                className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
+                style={{ backgroundColor: "#8B4513" }}
+              >
+                <Shield className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4">
                 Superior Protection
@@ -78,8 +87,11 @@ export const HomePage = () => {
               </p>
             </div>
             <div className="text-center p-6 animate-fade-in">
-              <div className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Leaf className="h-8 w-8 text-emerald-600" />
+              <div
+                className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
+                style={{ backgroundColor: "#8B4513" }}
+              >
+                <Leaf className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4">Eco-Friendly</h3>
               <p className="text-gray-600">
@@ -89,7 +101,40 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
-
+      {/* Hero Section */}
+      <section className="relative h-screen">
+        <div className="absolute inset-0">
+          <img
+            src={Regent_image}
+            alt="Wood finishing"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+          <div className="text-white max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-in">
+              Regent Coatings
+            </h1>
+            <p className="text-xl mb-8 animate-fade-in">
+              Belive in the beauty of wood with our premium finishes, designed
+              to enhance and protect your wooden surfaces.
+            </p>
+            <div className="flex space-x-4">
+              <Link
+                to="/products"
+                className="text-white px-8 py-3 rounded-full button-hover flex items-center animate-fade-in"
+                style={{ backgroundColor: "#8B4513" }}
+              >
+                Know about us <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ChevronDown className="h-8 w-8 text-white" />
+        </div>
+      </section>
       {/* Contact Section */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -102,12 +147,14 @@ export const HomePage = () => {
           </p>
           <Link
             to="/contact"
-            className="bg-emerald-600 text-white px-8 py-3 rounded-full button-hover animate-fade-in"
+            className=" text-white px-8 py-3 rounded-full button-hover animate-fade-in"
+            style={{ backgroundColor: "#8B4513" }}
           >
             Contact Us Today
           </Link>
         </div>
       </section>
+
       {/* Showcase Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
