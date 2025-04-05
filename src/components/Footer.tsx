@@ -1,5 +1,5 @@
-import { Paintbrush } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/Logo.png";
 
 export const Footer = () => (
   <footer className="bg-gray-800 text-gray-300 py-12">
@@ -7,7 +7,7 @@ export const Footer = () => (
       <div className="grid md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center mb-4">
-            <Paintbrush className="h-6 w-6 text-emerald-500" />
+            <img src={Logo} alt="Logo" className="h-6 w-6" />
             <span className="ml-2 text-xl font-bold text-white">
               Regent Coatings
             </span>

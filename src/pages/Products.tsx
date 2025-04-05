@@ -57,9 +57,15 @@ export const Products = () => (
             className="bg-white rounded-lg overflow-hidden shadow-lg p-6"
           >
             <img src={Regent_coatings} alt={product.name1} />
-            <h3 className="text-xl font-semibold mb-2">{product.name1}</h3>
-            <h4 className="text-l font-semibold mb-2">{product.name2}</h4>
-            <h5 className="text-m font-semibold mb-2">{product.name3}</h5>
+            <h3 className="text-xl font-semibold mb-2 text-center">
+              {product.name1}
+            </h3>
+            <h4 className="text-l font-semibold mb-2 text-center">
+              {product.name2}
+            </h4>
+            <h5 className="text-m font-semibold mb-2 text-center">
+              {product.name3}
+            </h5>
             <p className="text-gray-600 mb-4">{product.description}</p>
             {/* <ul className="space-y-2">
               {product.features.map((feature, i) => (

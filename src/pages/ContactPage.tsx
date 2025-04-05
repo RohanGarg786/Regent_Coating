@@ -39,7 +39,13 @@ export const Contact = () => (
                 <strong>Phone:</strong> +39 0384-25301
               </p>
               <p className="text-gray-600">
-                <strong>Email:</strong> regentcoatings@gmail.com
+                <strong>Email:</strong>{" "}
+                <a
+                  href="mailto:regentcoatings@gmail.com"
+                  className="text-gray-600 hover:underline"
+                >
+                  regentcoatings@gmail.com
+                </a>
               </p>
               <p className="text-gray-600">
                 <strong>Business Hours:</strong>
@@ -53,12 +59,13 @@ export const Contact = () => (
         </div>
         <div>
           <h3 className="text-2xl font-bold mb-6">Find Us</h3>
-          <div className="bg-gray-200 w-full h-96 rounded-lg">
-            <img
-              src={map}
-              alt="Location"
-              className="w-full h-full object-cover rounded-lg"
-            />
+          <div className="relative w-full h-0 pb-[56.25%] bg-gray-200 rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.2766139911264!2d8.7498778!3d45.2826318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786fe0c906e6e31%3A0x6c0ffb4e36b140ab!2sPiazza%20Signorelli%2C%201%2C%2027020%20Parona%20PV%2C%20Italy!5e0!3m2!1sen!2sin!4v1743871426607!5m2!1sen!2sin"
+              className="absolute top-0 left-0 w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
