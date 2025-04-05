@@ -122,7 +122,7 @@ export const HomePage = () => {
             </p>
             <div className="flex space-x-4">
               <Link
-                to="/products"
+                to="/about"
                 className="text-white px-8 py-3 rounded-full button-hover flex items-center animate-fade-in"
                 style={{ backgroundColor: "#8B4513" }}
               >

@@ -82,31 +82,6 @@ export const Footer = () => (
             </li>
           </ul>
         </div>
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Connect</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="border-t border-gray-700 mt-12 pt-8 text-sm text-center">
         <p>&copy; 2025 Regent Coatings. All rights reserved.</p>
