@@ -1,7 +1,7 @@
 import { ArrowRight, ChevronDown, Droplets, Leaf, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import Drum from "../assets/Drum.jpg";
-import Regent_Background from "../assets/Regent_background.png";
+import Regent_Background_new from "../assets/Regent_background_new.webp";
 import Regent_image from "../assets/Regent_image.png";
 
 export const HomePage = () => {
@@ -11,7 +11,7 @@ export const HomePage = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src={Regent_Background}
+            src={Regent_Background_new}
             alt="Wood finishing"
             className="w-full h-full object-cover"
           />

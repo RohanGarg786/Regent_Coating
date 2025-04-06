@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
+import Intagram from "../assets/instagram.jpg";
+import Youbube from "../assets/youtube.jpg";
 
 export const Footer = () => (
   <footer className="bg-gray-800 text-gray-300 py-12">
@@ -78,6 +80,36 @@ export const Footer = () => (
             <li>
               <Link to="/" className="hover:text-white transition-colors">
                 Home
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Connect</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                to="https://www.instagram.com/regentcoatings/?igsh=ZDFjZHU1eTF3ZmYy"
+                className="hover:text-white transition-colors"
+                target="_blank"
+              >
+                <img
+                  src={Intagram}
+                  alt="Instagram"
+                  className="h-6 w-6 inline mr-2"
+                />
+              </Link>
+              <Link
+                to="https://youtu.be/0OO8Wfh_IEs?si=UEiPzP_AwcxEcASD"
+                className="hover:text-white transition-colors"
+                target="_blank"
+              >
+                <img
+                  src={Youbube}
+                  alt="YouTube"
+                  className="h-6 w-6 inline mr-2"
+                />
               </Link>
             </li>
           </ul>

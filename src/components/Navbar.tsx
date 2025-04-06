@@ -268,14 +268,24 @@ export function Navigation() {
               whileHover={{ rotate: 15 }}
               transition={{ type: "spring", stiffness: 300 }}
             />
-            <motion.span
-              className="ml-2 text-2xl font-bold text-gray-900 group-hover:text-brown transition-colors"
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.1 }}
-            >
-              ReGent Coatings
-            </motion.span>
+            <div className="ml-2">
+              <motion.span
+                className="text-2xl font-bold text-gray-900 group-hover:text-brown transition-colors"
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.1 }}
+              >
+                ReGent Coatings
+              </motion.span>
+              <motion.span
+                className="block text-xs font-semibold text-gray-700 group-hover:text-brown transition-colors"
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }} // Slight delay for staggered animation
+              >
+                LUXURY ITALIAN WOOD FINISH
+              </motion.span>
+            </div>
           </Link>
 
           {/* Hamburger Icon for Mobile */}
