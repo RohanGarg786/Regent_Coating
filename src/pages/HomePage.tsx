@@ -113,9 +113,9 @@ export const HomePage = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-in">
+            <p className="text-5xl md:text-6xl font-bold mb-6 animate-slide-in">
               Regent Coatings
-            </h1>
+            </p>
             <p className="text-xl mb-8 animate-fade-in">
               Belive in the beauty of wood with our premium finishes, designed
               to enhance and protect your wooden surfaces.

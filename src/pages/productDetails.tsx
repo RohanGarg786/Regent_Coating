@@ -43,9 +43,9 @@ const ProductDetail = () => {
 
           {/* Product Details */}
           <div className="w-full lg:w-1/2">
-            <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center lg:text-left">
+            <p className="text-3xl font-bold text-gray-900 mb-4 text-center lg:text-left">
               {product.title}
-            </h1>
+            </p>
             <p className="text-gray-600 mb-6 text-center lg:text-left">
               {product.description}
             </p>
