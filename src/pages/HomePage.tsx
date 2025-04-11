@@ -20,7 +20,7 @@ export const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-slide-in">
-              Luxury Italian Wood Finish to your Home
+              Luxury Italian Wood Finish
             </h1>
             <p className="text-xl mb-8 animate-fade-in">
               Transform your wooden surfaces with our professional-grade

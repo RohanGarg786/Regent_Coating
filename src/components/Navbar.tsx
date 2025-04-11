@@ -275,7 +275,7 @@ export function Navigation() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 }}
               >
-                ReGent Coatings
+                Regent Coatings
               </motion.span>
               <motion.span
                 className="block text-xs font-semibold text-gray-700 group-hover:text-brown transition-colors"

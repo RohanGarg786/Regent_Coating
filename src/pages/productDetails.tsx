@@ -54,7 +54,7 @@ const ProductDetail = () => {
                 to="/products"
                 className="inline-block bg-brown text-white px-6 py-3 rounded-md hover:bg-brown-dark transition-colors text-center"
               >
-                Back to Products
+                Explore our Products
               </Link>
             </div>
           </div>
