@@ -2,19 +2,32 @@ import { ArrowRight, ChevronDown, Droplets, Leaf, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 import Drum from "../assets/Drum.jpg";
 import Regent_Background_new from "../assets/Regent_background_new.webp";
+import RegentBlur from "../assets/Regent_background_blur.jpg";
 import Regent_image from "../assets/Regent_image.png";
+import { useState } from "react";
+import { ScrollReveal } from "../components/ScrollReveal";
 
 export const HomePage = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <>
       {/* Hero Section */}
+      <ScrollReveal>
       <section className="relative h-screen">
         <div className="absolute inset-0">
-          <img
-            src={Regent_Background_new}
-            alt="Wood finishing"
-            className="w-full h-full object-cover"
-          />
+        <img
+          src={RegentBlur}
+          alt="Wood finishing background"
+          className="w-full h-full object-cover absolute transition-opacity duration-700"
+          style={{ opacity: imageLoaded ? 0 : 1 }}
+        />
+        <img
+          src={Regent_Background_new}
+          alt="Wood Finishing Background"
+          className="w-full h-full object-cover transition-opacity duration-700"
+          onLoad={() => setImageLoaded(true)}
+          style={{ opacity: imageLoaded ? 1 : 0 }}
+        />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -47,8 +60,10 @@ export const HomePage = () => {
           <ChevronDown className="h-8 w-8 text-white" />
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Features Section */}
+      <ScrollReveal>
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -101,7 +116,10 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
+      </ScrollReveal>
+
       {/* Hero Section */}
+      <ScrollReveal>
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
@@ -135,7 +153,10 @@ export const HomePage = () => {
           <ChevronDown className="h-8 w-8 text-white" />
         </div>
       </section>
+      </ScrollReveal>
+
       {/* Contact Section */}
+      <ScrollReveal>
       <section className="py-20 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-8 animate-slide-in">
@@ -154,8 +175,10 @@ export const HomePage = () => {
           </Link>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Showcase Section */}
+      <ScrollReveal>
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -185,6 +208,8 @@ export const HomePage = () => {
           </div>
         </div>
       </section>
+      </ScrollReveal>
+
     </>
   );
 };
