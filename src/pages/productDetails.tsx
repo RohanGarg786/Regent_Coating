@@ -33,15 +33,15 @@ const ProductDetail = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Product Image */}
-          <ScrollReveal>
           <div className="w-full lg:w-1/2">
+            <ScrollReveal>
             <img
               src={product.image}
               alt={product.title}
               className="w-full h-auto object-cover rounded-lg shadow-md"
             />
+            </ScrollReveal>
           </div>
-          </ScrollReveal>
 
           {/* Product Details */}
           <div className="w-full lg:w-1/2">
