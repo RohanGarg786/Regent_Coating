@@ -75,6 +75,7 @@ export const HomePage = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
+            <ScrollReveal>
             <div className="text-center p-6 animate-fade-in">
               <div
                 className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
@@ -87,6 +88,8 @@ export const HomePage = () => {
                 Enhances wood grain with deep, rich color that lasts for years
               </p>
             </div>
+            </ScrollReveal>
+            <ScrollReveal>
             <div className="text-center p-6 animate-fade-in">
               <div
                 className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
@@ -101,6 +104,8 @@ export const HomePage = () => {
                 Guards against scratches, stains, and daily wear and tear
               </p>
             </div>
+            </ScrollReveal>
+            <ScrollReveal>
             <div className="text-center p-6 animate-fade-in">
               <div
                 className="bg-emerald-100 rounded-full p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center"
@@ -113,6 +118,7 @@ export const HomePage = () => {
                 Low VOC formulation safe for your home and the environment
               </p>
             </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -138,6 +144,7 @@ export const HomePage = () => {
               Belive in the beauty of wood with our premium finishes, designed
               to enhance and protect your wooden surfaces.
             </p>
+            <ScrollReveal>
             <div className="flex space-x-4">
               <Link
                 to="/about"
@@ -147,6 +154,7 @@ export const HomePage = () => {
                 Know about us <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
+            </ScrollReveal>
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -166,6 +174,7 @@ export const HomePage = () => {
             Get in touch with our wood finishing experts for personalized
             recommendations
           </p>
+          <ScrollReveal>
           <Link
             to="/contact"
             className=" text-white px-8 py-3 rounded-full button-hover animate-fade-in"
@@ -173,6 +182,7 @@ export const HomePage = () => {
           >
             Contact Us Today
           </Link>
+          </ScrollReveal>
         </div>
       </section>
       </ScrollReveal>
@@ -198,12 +208,14 @@ export const HomePage = () => {
                 wooden surfaces while providing lasting protection. Perfect for
                 furniture, floors, and architectural elements.
               </p>
+              <ScrollReveal>
               <Link
                 to="/products"
                 className="bg-emerald-600 text-white px-8 py-3 rounded-full button-hover flex items-center w-fit"
               >
                 View Products <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
+              </ScrollReveal>
             </div>
           </div>
         </div>

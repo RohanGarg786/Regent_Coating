@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
 import { coatings } from "../data/coatingsData";
 import BlogCard from "../components/BlogCard";
-
+import { ScrollReveal } from "../components/ScrollReveal";
 const BlogPage: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
@@ -35,15 +35,10 @@ const BlogPage: React.FC = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {coatings.map((post) => (
-            <motion.div
-              key={post.id} // Already a string, no change needed here
-              initial={{ opacity: 0, y: 50 }}
-              animate={isVisible ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: Number(post.id) * 0.2 }} // Convert string to number for delay if needed
-            >
+          {coatings.map((post,index) => (
+           <ScrollReveal key={index}>
               <BlogCard post={post} onClick={() => handleCardClick(post.id)} />
-            </motion.div>
+            </ScrollReveal>
           ))}
         </div>
 
@@ -57,6 +52,7 @@ const BlogPage: React.FC = () => {
             justifyContent: "center",
           }}
         >
+          <ScrollReveal>
           <Link
             to="/"
             className="text-white px-8 py-3 button-hover flex items-center animate-fade-in rounded-full"
@@ -66,6 +62,7 @@ const BlogPage: React.FC = () => {
           >
             Back to home
           </Link>
+          </ScrollReveal>
         </motion.div>
       </motion.div>
     </div>

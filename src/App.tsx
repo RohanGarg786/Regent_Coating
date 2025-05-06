@@ -3,6 +3,7 @@ import { Footer } from "./components/Footer";
 import { Navigation } from "./components/Navbar";
 import Routes from "./routes/route";
 import { useEffect } from "react";
+import { ScrollReveal } from "./components/ScrollReveal";
 function ScrollToTop() {
   const location = useLocation();
 
@@ -21,7 +22,9 @@ function App() {
         <ScrollToTop />
         <Routes />
         {/* Footer */}
+        <ScrollReveal>
         <Footer />
+        </ScrollReveal>
       </div>
     </Router>
   );

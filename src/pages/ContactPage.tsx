@@ -1,14 +1,16 @@
-import map from "../assets/map.png";
-
+import { ScrollReveal } from "../components/ScrollReveal";
 export const Contact = () => (
   <section className="py-20 bg-gray-50 ">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-        <p className="text-xl text-gray-600">
-          Get in touch with our wood finishing experts
-        </p>
-      </div>
+      <ScrollReveal>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+          <p className="text-xl text-gray-600">
+            Get in touch with our wood finishing experts
+          </p>
+        </div>
+      </ScrollReveal>
+      <ScrollReveal>
       <div className="grid md:grid-cols-2 gap-12">
         <div>
           <h3 className="text-2xl font-bold mb-6">Our Locations</h3>
@@ -57,6 +59,7 @@ export const Contact = () => (
             </div>
           </div>
         </div>
+        <ScrollReveal>
         <div>
           <h3 className="text-2xl font-bold mb-6">Find Us</h3>
           <div className="relative w-full h-0 pb-[56.25%] bg-gray-200 rounded-lg overflow-hidden">
@@ -68,7 +71,9 @@ export const Contact = () => (
             ></iframe>
           </div>
         </div>
+        </ScrollReveal>
       </div>
+      </ScrollReveal>
     </div>
   </section>
 );

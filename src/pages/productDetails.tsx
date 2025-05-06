@@ -1,6 +1,6 @@
-import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Regent_coatings from "../assets/Regent_coatings.png"; // Replace with specific product images later
+import { ScrollReveal } from "../components/ScrollReveal";
 
 const ProductDetail = () => {
   const { productId } = useParams(); // productId can be undefined if route doesn't match
@@ -33,6 +33,7 @@ const ProductDetail = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Product Image */}
+          <ScrollReveal>
           <div className="w-full lg:w-1/2">
             <img
               src={product.image}
@@ -40,15 +41,21 @@ const ProductDetail = () => {
               className="w-full h-auto object-cover rounded-lg shadow-md"
             />
           </div>
+          </ScrollReveal>
 
           {/* Product Details */}
           <div className="w-full lg:w-1/2">
+            <ScrollReveal>
             <p className="text-3xl font-bold text-gray-900 mb-4 text-center lg:text-left">
               {product.title}
             </p>
+            </ScrollReveal>
+            <ScrollReveal>
             <p className="text-gray-600 mb-6 text-center lg:text-left">
               {product.description}
             </p>
+            </ScrollReveal>
+            <ScrollReveal>
             <div className="flex justify-center lg:justify-start">
               <Link
                 to="/products"
@@ -57,6 +64,7 @@ const ProductDetail = () => {
                 Explore our Products
               </Link>
             </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { ArrowRight } from "lucide-react";
 import Regent_coatings from "../assets/Regent_coatings.png";
+import { ScrollReveal } from "../components/ScrollReveal";
 
 export const Products = () => (
   <section className="py-20 bg-gray-50">
@@ -52,8 +52,8 @@ export const Products = () => (
               "Vernice sintetica lucida monocomponente dotata di brillantezza, distensione e resistenza agli agenti atmosferici. Consigliata per infissi e manufatti esterni. Il pulviscolo della spruzzatura può causare fenomeni di autocombustione, pertanto pulire accuratamente il luogo a fine lavoro.",
           },
         ].map((product, index) => (
+          <ScrollReveal key={index}>
           <div
-            key={index}
             className="bg-white rounded-lg overflow-hidden shadow-lg p-6"
           >
             <img src={Regent_coatings} alt={product.name1} />
@@ -76,6 +76,7 @@ export const Products = () => (
               ))}
             </ul> */}
           </div>
+          </ScrollReveal>
         ))}
       </div>
     </div>
