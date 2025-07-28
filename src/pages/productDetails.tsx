@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import Regent_coatings from "../assets/Regent_coatings.png"; // Replace with specific product images later
+import Regent_coatings from "../assets/Regent_product_new.png"; // Replace with specific product images later
 import { ScrollReveal } from "../components/ScrollReveal";
 
 const ProductDetail = () => {
@@ -33,12 +33,12 @@ const ProductDetail = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Product Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="h-auto w-full flex justify-center lg:w-1/2 md:w-[400px] lg:h-full">
             <ScrollReveal>
             <img
               src={product.image}
               alt={product.title}
-              className="w-full h-auto object-cover rounded-lg shadow-md"
+              className=" h-auto w-[400px] md:h-full md:w-[500px] lg:w-full lg:h-auto object-cover rounded-lg shadow-md"
             />
             </ScrollReveal>
           </div>

@@ -1,4 +1,4 @@
-import Regent_coatings from "../assets/Regent_coatings.png";
+import Regent_coatings from "../assets/Regent_product_new.png";
 import { ScrollReveal } from "../components/ScrollReveal";
 
 export const Products = () => (
